@@ -1,0 +1,696 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@800&display=swap');
+
+body{
+    margin:1px;
+}
+.headerPart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(143, 216, 216);
+}
+
+li{
+    list-style: none;
+}
+ li a {
+ text-decoration: none;
+ font-size: 20px;
+ font-family: cursive;
+ color: black;
+}
+.meanu{
+    display: flex;
+    gap: 1em;
+    padding: 20px;
+    margin-right: 200px;
+}
+/*carousel part*/
+
+.bannerPart{
+    width:auto;
+    height: 450px;
+    background-color: #8fd8d8;
+    font-family: 'Roboto'; 
+    display: flex   ;
+}
+
+
+.line-1{
+    position: relative;
+    top: 25%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+
+.bannerPart{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+.textArea{
+    margin-left: 120px;
+}
+.buttonColor{
+    color: rgb(248, 248, 248);
+    font-weight: 600 ;
+    font-family: cursive;
+    background-color: rgb(0, 0, 0);
+}
+.containers{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+    justify-items: center;
+    padding:50px ;
+    gap: 2;
+
+   
+}
+.containers span{
+    font-size: 27px;
+    font-family: cursive;
+    color: orange;
+    font-weight: 500;
+}
+.containers h3{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    }
+.colm1 , .colms2 , .colm3 {
+  box-shadow:4px 2px 0px -2px rgba(216, 165, 26, 0.7);
+    padding: 20px 40px;
+}  
+
+/* SKILL BAR */
+.skillPart{
+  background-color: #0984e3;
+  padding: 50px 50px;
+ 
+
+}
+.skillParts{
+  display: flex;
+  align-items: center;
+
+}
+
+.skillPara{
+  padding: 20px 60px;
+}
+
+
+. ::selection {
+    color: #fff;
+    background: #6665ee;
+  }
+  
+  .skill-bars {
+    padding: 25px 30px;
+    width: 600px;
+    background: #fff;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  .skill-bars .bar {
+    margin: 20px 0;
+  }
+  
+  .skill-bars .bar:first-child {
+    margin-top: 0px;
+  }
+  
+  .skill-bars .bar .info {
+    margin-bottom: 5px;
+  }
+  
+  .skill-bars .bar .info span {
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+  }
+  
+  @keyframes showText {
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .skill-bars .bar .progress-line {
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05),
+      0 1px rgba(255, 255, 255, 0.8);
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  }
+  
+  @keyframes animate {
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  
+  .bar .progress-line span {
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: #6665ee;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  }
+  
+  .bar .progress-line.html span {
+    width: 90%;
+  }
+  
+  .bar .progress-line.css span {
+    width: 90%;
+  }
+  
+  .bar .progress-line.jquery span {
+    width: 85%;
+  }
+  
+  .bar .progress-line.python span {
+    width: 50%;
+  }
+  
+  .bar .progress-line.mysql span {
+    width: 75%;
+  }
+  
+  .progress-line span::before {
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+  }
+  
+  .progress-line span::after {
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-weight: 500;
+    background: #000;
+    color: #fff;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+  }
+  
+  @keyframes showText2 {
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .progress-line.html span::after {
+    content: "90%";
+  }
+  
+  .progress-line.css span::after {
+    content: "90%";
+  }
+  
+  .progress-line.jquery span::after {
+    content: "85%";
+  }
+  .progress-line.reactjs span::after {
+    content: "80%";
+  }
+  
+
+  .progress-line.python span::after {
+    content: "50%";
+  }
+  
+  .progress-line.mysql span::after {
+    content: "85%";
+  }
+
+::selection {
+  color: #fff;
+  background: #6665ee;
+}
+
+.skill-bars {
+  padding: 25px 30px;
+  width: 600px;
+  background: #fff;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.skill-bars .bar {
+  margin: 20px 0;
+}
+
+.skill-bars .bar:first-child {
+  margin-top: 0px;
+}
+
+.skill-bars .bar .info {
+  margin-bottom: 5px;
+}
+
+.skill-bars .bar .info span {
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+
+.skill-bars .bar .progress-line {
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05),
+    0 1px rgba(255, 255, 255, 0.8);
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.bar .progress-line span {
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #6665ee;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line.html span {
+  width: 90%;
+}
+
+.bar .progress-line.css span {
+  width: 90%;
+}
+
+.bar .progress-line.jquery span {
+  width: 85%;
+}
+.bar .progress-line.reactjs span {
+  width: 80%;
+}
+
+
+.bar .progress-line.python span {
+  width: 50%;
+}
+
+.bar .progress-line.mysql span {
+  width: 85%;
+}
+
+.progress-line span::before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+
+.progress-line span::after {
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-weight: 500;
+  background: #000;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText2 {
+  100% {
+    opacity: 1;
+  }
+}
+
+.progress-line.html span::after {
+  content: "90%";
+}
+
+.progress-line.css span::after {
+  content: "90%";
+}
+
+.progress-line.jquery span::after {
+  content: "85%";
+}
+
+.progress-line.reactjs span::after {
+  content: "80%";
+}
+
+.progress-line.python span::after {
+  content: "50%";
+}
+
+.progress-line.mysql span::after {
+  content: "85%";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+.fas{
+    font-size: 30px;
+    color: rgb(80, 79, 79);
+}
+.fab{font-size: 30px;
+    color: rgb(134, 134, 134);
+
+}
+/*  */
+.icon{
+  display: flex;
+  align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.mail{
+  margin-right:40px;
+}
+.contactPara {
+  text-align: justify;
+  font-family: 'Mukta', sans-serif;
+}
+
+.contactPara h1{
+  text-align: left;
+}
+.faEn{
+  font-size: 25px;
+  color: #1234cc;
+}
+.mail h6{
+  color: #000000;
+}
+
+/* form part */
+
+form {
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px 20px;
+   
+    border-radius: 8px;
+  }
+  
+  h1 {
+    margin: 0 0 30px 0;
+    text-align: center;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="time"],
+  input[type="url"],
+  textarea,
+  select {
+    
+    border: 1px solid rgb(80, 80, 80);
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 80%;
+    
+    color: #1234cc;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+  }
+  
+  select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
+  }
+  
+  
+  fieldset {
+    margin-bottom: 30px;
+    border: none;
+  }
+  
+  legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  label.light {
+    font-weight: 300;
+    display: inline;
+  }
+  
+  .number {
+    background-color: #5fcf80;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 100%;
+  }
+  
+  @media screen and (min-width: 480px) {
+  
+    form {
+      max-width: 480px;
+    }
+  
+  }
+    .sendMsg{
+      border:1px dotted blue;
+      background-color: blue;
+      color: rgb(243, 238, 238);
+      padding:2px 8px;
+      margin-bottom: 10px;
+    }
+
+
+
+
+  /**footer**/
+
+  
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 30px 20px 30px;
+    color: #2f2f2f;
+    background-color: #000000;
+    border-top: 1px solid #e5e5e5;
+  }
+  
+  .footer > * {
+    flex:  1 100%;
+  }
+  
+  .footer__addr {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+  }
+  
+  .footer__logo {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-size: 1.5rem;
+  }
+  
+  .footer__addr h2 {
+    margin-top: 1.3em;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  .nav__title {
+    font-weight: 400;
+    font-size: 15px;
+  }
+  
+  .footer address {
+    font-style: normal;
+    color: #999;
+  }
+  
+  .footer__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    max-width: max-content;
+    background-color: rgb(33, 33, 33, 0.07);
+    border-radius: 100px;
+    color: #2f2f2f;
+    line-height: 0;
+    margin: 0.6em 0;
+    font-size: 1rem;
+    padding: 0 1.3em;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer li {
+    line-height: 2em;
+  }
+  
+  .footer a {
+    text-decoration: none;
+  }
+  
+  .footer__nav {
+    display: flex;
+      flex-flow: row wrap;
+  }
+  
+  .footer__nav > * {
+    flex: 1 50%;
+    margin-right: 1.25em;
+  }
+  
+  .nav__ul a {
+    color: #999;
+  }
+  
+  .nav__ul--extra {
+    column-count: 2;
+    column-gap: 1.25em;
+  }
+  
+  .legal {
+    display: flex;
+    flex-wrap: wrap;
+    color: #999;
+  }
+    
+  .legal__links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .heart {
+    color: #2f2f2f;
+  }
+  
+  @media screen and (min-width: 24.375em) {
+    .legal .legal__links {
+      margin-left: auto;
+    }
+  }
+  
+  @media screen and (min-width: 40.375em) {
+    .footer__nav > * {
+      flex: 1;
+    }
+    
+    .nav__item--extra {
+      flex-grow: 2;
+    }
+    
+    .footer__addr {
+      flex: 1 0px;
+    }
+    
+    .footer__nav {
+      flex: 2 0px;
+    }
+  }
+
+
